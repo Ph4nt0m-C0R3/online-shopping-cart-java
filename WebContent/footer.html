@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Care Cosmetics</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/changes.css">
+</head>
+
+<style>
+	.footer-section {
+	  background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+	  color: #fff;
+	  margin-top: 200px;
+	  padding: 20px 15px 30px;
+	  font-size: 14px;
+	}
+	
+	.footer-section h3 {
+	  font-weight: 600;
+	  margin-bottom: 5px;
+	  color: #ff7eb3;
+	}
+	
+	.footer-section em {
+	  color: #bbb;
+	  font-size: 13px;
+	}
+	
+	.footer-section p {
+	  margin: 6px 0;
+	  color: #ddd;
+	}
+	
+	.footer-section .glyphicon {
+	  margin-right: 6px;
+	  color: #ff7eb3;
+	  font-size: 15px; /* keep icons small */
+	}
+	
+	.footer-section .form-control {
+	  background: #333;
+	  border: none;
+	  border-radius: 6px;
+	  color: #fff;
+	  box-shadow: none;
+	}
+	
+	.footer-section .form-control::placeholder {
+	  color: #aaa;
+	}
+	
+	.footer-head {
+	  margin-bottom: 20px;
+	}
+	
+	.footer-section .btn-primary {
+	  background: #ff7eb3;
+	  border: none;
+	  border-radius: 20px;
+	  padding: 8px 20px;
+	  transition: 0.3s;
+	}
+	
+	.footer-section .btn-primary:hover {
+	  background: #ff4a90;
+	}
+	
+	/* Mobile adjustments */
+	@media (max-width: 767px) {
+	  /* Keep only the info & form left-aligned */
+	  .footer-section .row p,
+	  .footer-section .row .glyphicon,
+	  .footer-section .row label,
+	  .footer-section .row input,
+	  .footer-section .row textarea {
+	    text-align: left !important;
+	  }
+	
+	  .footer-section .col-md-4 {
+	    margin-bottom: 20px; /* spacing between info and form */
+	  }
+	
+	  .footer-section .btn-primary {
+	    width: auto; /* full width button for thumbs */
+	    margin-top: 10px;
+	  }
+	}
+
+</style>
+
+<body>
+	<!-- Start the footer Contacts -->
+	<div class="container-fluid footer-section"
+		style="background-color: #454545; color: white; margin-top: 200px;">
+		
+		<div class="footer-head">
+		    <h3 class="text-center">Contact</h3>
+		    <p class="text-center"><em>Have a question? Reach out to us!</em></p>
+		</div>
+		
+		<div class="container">
+			<div class="row test">
+				<div class="col-md-4">
+				    <p>Get in touch with us anytime.</p>
+				    <p>
+				        <span class="glyphicon glyphicon-map-marker"></span> Smart Care Cosmetics
+				    </p>
+				    <p>
+				        <span class="glyphicon glyphicon-phone"></span> Phone: Not configured
+				    </p>
+				    <p>
+				        <span class="glyphicon glyphicon-envelope"></span> Email: demo@example.test
+				    </p>
+				    <p>
+				        <span class="glyphicon glyphicon-copyright-mark"></span> SmartCare - 2025
+				    </p>
+				</div>
+				<div class="col-md-8">
+					<form action="fansMessage" method="post">
+						<div class="row">
+							<div class="col-sm-6 form-group">
+								<input class="form-control" id="name" name="name"
+									placeholder="Name" type="text" required>
+							</div>
+							<div class="col-sm-6 form-group">
+								<input class="form-control" id="email" name="email"
+									placeholder="Email" type="email" required>
+							</div>
+						</div>
+						<textarea class="form-control" id="comments" name="comments"
+							placeholder="Comment" rows="5" required></textarea>
+						<div class="row">
+							<br>
+							<div class="col-md-12 form-group">
+								<button class="btn btn-primary pull-right"  style="margin-bottom: 20px;" type="submit">Send</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of Contact or about us -->
+
+</body>
+</html>

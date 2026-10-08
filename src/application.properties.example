@@ -1,0 +1,6 @@
+db.driverName=com.mysql.cj.jdbc.Driver
+db.connectionString=jdbc:mysql://localhost:3306/shopping-cart
+db.username=
+db.password=
+mailer.email=
+mailer.password=

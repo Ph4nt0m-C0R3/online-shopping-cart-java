@@ -1,0 +1,492 @@
+/* Keep your body background */
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    color: #333;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+  	background-color: #F1E3D8;
+}
+
+.page-wrapper {
+    min-height: 100vh; /* full screen */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* center vertically */
+    padding: 40px 15px;  /* safety padding for small screens */
+}
+
+/* Navbar styling */
+.navbar {
+    margin-bottom: 0;
+    background-color: #B07FB5; /* Keep original color */
+    border: none;
+    font-size: 15px !important;
+    letter-spacing: 1px; /* Reduced from 4px */
+    opacity: 0.95;
+    font-weight: bold !important;
+}
+
+/* Navbar brand & links - refined */
+.navbar li a,
+.navbar .navbar-brand {
+    color: #d5d5d5 !important;
+    height: 50px; /* Match navbar height */
+    line-height: 50px; /* Center text vertically */
+    padding: 0 18px; /* Remove vertical padding, keep horizontal */
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s ease;
+    border-radius: 8px; /* Soft square shape */
+    font-size: 15px;
+}
+
+/* Hover effect - modern cosmetic style */
+.navbar-nav li:hover > a {
+    color: #fff !important;
+    background: linear-gradient(135deg, #ff66b2, #ff3385);
+    box-shadow: 0 4px 10px rgba(255, 102, 178, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Active link style */
+.navbar-nav li.active:hover > a {
+    color: #fff !important;
+    background: linear-gradient(135deg, #ff3385, #ff1a66) !important;
+    box-shadow: 0 4px 10px rgba(255, 51, 133, 0.4);
+}
+
+/* Dropdown menu - soft & full-width hover */
+.dropdown-menu {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    padding: 0; /* Remove extra space so hover fills properly */
+    overflow: hidden; /* Makes background align perfectly */
+}
+
+/* Dropdown menu - vertically centered items */
+.dropdown-menu li a {
+    color: #333 !important;
+    padding: 0 20px; /* Horizontal padding only */
+    height: 40px; /* Set fixed height */
+    line-height: 40px; /* Match height for perfect vertical centering */
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    transition: background 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    background: linear-gradient(135deg, #ffe6f0, #ffd6eb);
+    color: #ff3385 !important;
+}
+
+/* Navbar toggle button for mobile */
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+/* Buttons in cosmetic tone */
+button {
+    background: linear-gradient(135deg, #ff66b2, #ff3385);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff3385, #e60073);
+    box-shadow: 0 4px 10px rgba(230, 0, 115, 0.3);
+}
+
+/* Search bar container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+/* Search form */
+.search-form {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 30px;
+  padding: 5px 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Input styling */
+.search-form input {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-size: 14px;
+  flex: 1;
+  background: transparent;
+  color: #333;
+}
+
+/* Placeholder style */
+.search-form input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Button styling */
+/* Button styling */
+.search-form button {
+  border: none;
+  background: linear-gradient(135deg, #ff6ec7, #ff3c82);
+  color: white;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  display: flex;              /* Flex centers children */
+  align-items: center;        /* Vertical center */
+  justify-content: center;    /* Horizontal center */
+  transition: transform 0.3s ease, background 0.3s ease;
+  padding: 0;
+}
+
+/* Search icon fix */
+.search-form button i {
+  font-size: 16px;   /* adjust size */
+  line-height: 1;    /* makes vertical align perfect */
+}
+
+/* Hover & focus effects */
+.search-form button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #ff3c82, #ff6ec7);
+}
+
+.search-form:focus-within {
+  box-shadow: 0 6px 18px rgba(255, 108, 199, 0.3);
+}
+
+/* Fix glyphicon alignment inside circular button */
+.search-form button .glyphicon {
+  font-size: 18px;
+  line-height: 1;          /* Removes extra top/bottom spacing */
+  margin: 0;               /* Reset Bootstrap margins */
+  position: static !important; /* Remove offset positioning */
+  display: flex;           /* Flex inside */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Center it just like before */
+.fade-text {
+  text-align: center;
+  margin-top: 5px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.4em;
+  height: 1.4em;     /* keeps one line visible */
+  overflow: hidden;
+}
+
+/* Each span stacks in same spot */
+.fade-text span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  animation: fadeWords 9s infinite;
+}
+
+/* Sequence timing */
+.fade-text span:nth-child(1) { animation-delay: 0s; }
+.fade-text span:nth-child(2) { animation-delay: 3s; }
+.fade-text span:nth-child(3) { animation-delay: 6s; }
+
+@keyframes fadeWords {
+  0%   { opacity: 0; transform: translateY(100%); }
+  10%  { opacity: 1; transform: translateY(0); }
+  30%  { opacity: 1; transform: translateY(0); }
+  40%  { opacity: 0; transform: translateY(-100%); }
+  100% { opacity: 0; }
+}
+
+/* Responsive .tab styling */
+@media only screen and (max-width: 1200px) {
+	/* Full-width hover effect for navbar links */
+	.navbar-nav li a:hover,
+	.navbar-nav li:hover > a {
+	    display: block;    /* Make link fill its container on hover */
+	    width: 100%;       /* Full width coverage */
+	    color: #fff !important;
+	    background: linear-gradient(135deg, #ff66b2, #ff3385);
+	    box-shadow: 0 4px 10px rgba(255, 102, 178, 0.4);
+	    transform: translateY(-2px);
+	}
+	
+	.navbar-nav .open .dropdown-menu > li > a,
+ 	.dropdown-menu > li > a,
+  	.dropdown-menu li a {
+	  	color: #ffffff!important;          /* Black text for visibility */
+	  	background-color: #333!important; /* White background for contrast */
+	  	text-align: center;           /* Center text horizontally */
+	    justify-content: center;      /* Center content if flex is used */
+	    padding: 0;              /* Remove uneven padding */
+	    height: 45px;            /* Fixed height for each item */
+	    line-height: 45px;       /* Match height for perfect vertical centering */
+	}
+
+  /* Hover/focus styles on mobile */
+	.navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-nav .open .dropdown-menu > li > a:focus,
+	.dropdown-menu > li > a:hover,
+	.dropdown-menu > li > a:focus {
+	   	color: #ff3385 !important; /* Accent color */
+	   	background: linear-gradient(135deg, #ffe6f0, #ffd6eb) !important;
+	}
+  
+    .tab {
+        border-radius: 10px;
+        background-color: #FFE5CC;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 20px;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        transition: background 0.3s ease;
+        color: #333 !important;
+    }
+
+    /* Persistent hover effect for tabs */
+    .tab:hover,
+    .tab:hover * {
+        background-color: #ffcc99;
+    }
+    
+    /* Make bars bold & black */
+	.navbar-toggle .icon-bar {
+	  background-color: #000 !important;
+	  height: 3px;
+	  transition: all 0.3s ease;
+	}
+	
+	/* Default middle bar visible */
+	.navbar-toggle .icon-bar:nth-child(2) {
+	  opacity: 1;
+	}
+	
+	/* When menu is open (button loses 'collapsed') */
+	.navbar-toggle:not(.collapsed) .icon-bar:nth-child(1) {
+	  transform: rotate(45deg) translate(5px, 5px);
+	}
+	.navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+	  opacity: 0; /* hide middle bar */
+	}
+	.navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+	  transform: rotate(-45deg) translate(5px, -5px);
+	}
+}
+
+/* Responsive Search Bar */
+@media only screen and (max-width: 768px) {
+  .search-form {
+    max-width: 300px;   /* smaller search bar on tablets & mobiles */
+    padding: 4px 10px;  /* tighter padding */
+  }
+
+  .search-form input {
+    font-size: 12px;    /* smaller text */
+    padding: 6px 10px;  /* reduce input padding */
+  }
+
+  .search-form button {
+    width: 34px;        /* smaller button */
+    height: 34px;
+  }
+
+  .search-form button i {
+    font-size: 14px;    /* shrink icon */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .search-form {
+    max-width: 250px;   /* even smaller for very small screens */
+  }
+}
+
+/* Shopping Cart notification Badge */
+.icon-blue {
+    color: #0088cc;
+    transition: color 0.3s ease;
+}
+
+.icon-blue:hover,
+.icon-blue:hover * {
+    color: #005580;
+}
+
+.icon-grey {
+    color: grey;
+    transition: color 0.3s ease;
+}
+
+.icon-grey:hover,
+.icon-grey:hover * {
+    color: #333;
+}
+
+i {
+    width: 70px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+.badge:after {
+    content: attr(data-count);
+    position: absolute;
+    height: 2rem;
+    top: 0.15rem;
+    right: 0.15rem;
+    width: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+
+    background: #ff6600;   /* clean white badge */
+    color: #ffffff;        /* matches your gradient theme */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25); /* subtle shadow to stand out */
+}
+
+i.fa::before {
+    font-size: 3rem !important;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+.card img {
+    display: block;   /* Removes inline gap */
+    margin: 0 auto;   /* Keeps it centered */
+    border: none;     /* Ensures no unwanted border */
+    box-shadow: none; /* In case Bootstrap added something */
+}
+.card-body {
+    padding: 15px;
+}
+.card-body h5 {
+    font-weight: bold;
+    color: #333;
+}
+.card-footer {
+    background: transparent;
+    border-top: none;
+    padding: 12px;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 20px;
+    padding: 8px 18px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+.btn-success {
+    background: linear-gradient(135deg, #66cc99, #33b374);
+    border: none;
+}
+.btn-success:hover {
+    background: linear-gradient(135deg, #33b374, #00995c);
+}
+.btn-danger {
+    background: linear-gradient(135deg, #ff6666, #e60000);
+    border: none;
+}
+.btn-warning {
+    background: linear-gradient(135deg, #ffcc66, #ff9900);
+    border: none;
+}
+
+footer {
+    background: #2d2d30;
+    color: #d5d5d5;
+    padding: 30px 0;
+    text-align: center;
+}
+footer a {
+    color: #ff66b2;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+footer a:hover {
+    color: #fff;
+}
+
+h2, h3, h4, h5 {
+    font-weight: bold;
+}
+
+/* Floating icon for unshipped orders (mobile only) */
+.floating-unshipped {
+    position: fixed;
+    bottom: 20px;      /* same as cart */
+    right: 20px;       /* same as cart */
+    z-index: 9999;     /* above everything */
+    display: none;     /* hidden on desktop */
+}
+
+/* Show only on small screens */
+@media (max-width: 768px) {
+  .floating-unshipped {
+    display: block;
+  }
+
+  /* Style same as cart bubble */
+  .floating-unshipped i {
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    padding: 8px;
+    border-radius: 6px;
+    background: #d8bfd8;  /* light purple background */
+    color: #B07FB5;       /* matching text color */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* subtle floating shadow */
+  }
+
+  .floating-unshipped i::before {
+    font-size: 3rem !important; /* keep same size as cart */
+  }
+}

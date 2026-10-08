@@ -1,0 +1,6 @@
+/build/
+/target/
+databases/SHOPPING_CART_ERD.mwb.bak
+src/application.properties
+# Original Workbench model embeds personal sample records
+databases/SHOPPING_CART_ERD.mwb
