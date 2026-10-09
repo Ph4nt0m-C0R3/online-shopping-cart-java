@@ -4,6 +4,12 @@ A **Semester III academic Java web project** in Aung Myo Pyae's UIT coursework c
 
 **Attribution:** this codebase includes the Apache-2.0-licensed [shopping-cart project by shashirajraja / Bitter Code](https://github.com/shashirajraja/shopping-cart). The upstream LICENSE and package names are retained. This portfolio copy does not claim sole authorship of the inherited implementation.
 
+## Screenshots
+
+![Java / JSP Online Shopping Cart — screenshot 1](docs/screenshots/smart-care-1.png)
+
+![Java / JSP Online Shopping Cart — screenshot 2](docs/screenshots/smart-care-2.png)
+
 ## Main features
 
 - Customer registration, login, profile display, and logout.
